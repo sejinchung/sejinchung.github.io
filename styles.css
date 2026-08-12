@@ -58,7 +58,7 @@ footer {
 
 .wordmark {
   display: inline-block;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -186,9 +186,13 @@ h3 {
   padding: 52px 0 64px;
 }
 
-.profile-panel .portrait-placeholder {
+.profile-panel .profile-photo {
+  display: block;
   width: min(68%, 165px);
+  aspect-ratio: 3 / 4;
   margin-bottom: 24px;
+  object-fit: cover;
+  border-radius: 2px;
 }
 
 .profile-panel .eyebrow {
@@ -314,7 +318,7 @@ footer p {
     gap: 6px 14px;
   }
 
-  .profile-panel .portrait-placeholder {
+  .profile-panel .profile-photo {
     width: min(46vw, 165px);
   }
 
