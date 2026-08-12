@@ -208,6 +208,11 @@ h3 {
   border-bottom: 1px solid var(--line);
 }
 
+.sections {
+  width: 100%;
+  max-width: 790px;
+}
+
 .sections section > p:not(.section-number) {
   max-width: 720px;
   margin: 0;
