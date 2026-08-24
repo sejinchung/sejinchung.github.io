@@ -140,7 +140,7 @@ h3 {
 
 .profile-email {
   display: inline-block;
-  margin-top: 2px;
+  margin-top: 0;
   color: var(--muted);
   font-size: 12px;
   text-decoration: none;
@@ -186,7 +186,7 @@ h3 {
   position: sticky;
   top: 98px;
   height: fit-content;
-  padding: 52px 0 64px;
+  padding: 38px 0 64px;
 }
 
 .profile-panel .profile-photo {
@@ -195,7 +195,7 @@ h3 {
   aspect-ratio: 3 / 4;
   margin-bottom: 24px;
   object-fit: cover;
-  border-radius: 2px;
+  border-radius: 8px;
 }
 
 .profile-panel .eyebrow {
@@ -213,6 +213,10 @@ h3 {
   scroll-margin-top: 78px;
   padding: 64px 0 74px;
   border-bottom: 1px solid var(--line);
+}
+
+.sections section:first-child {
+  padding-top: 42px;
 }
 
 .sections {
@@ -424,7 +428,7 @@ footer p {
 
   .profile-panel {
     position: static;
-    padding: 48px 0 28px;
+    padding: 36px 0 28px;
     border-bottom: 1px solid var(--line);
   }
 
