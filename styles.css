@@ -4,7 +4,7 @@
   --muted: #777176;
   --line: #e5e0e3;
   --accent: #a66f7e;
-  --accent-strong: #78384d;
+  --accent-strong: #6B2942;
   --accent-soft: #f1e5e9;
   --max-width: 1120px;
 }
@@ -266,6 +266,52 @@ h3 {
   color: var(--muted) !important;
   font-size: 10px !important;
   line-height: 1.3 !important;
+}
+
+.author-me {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.accent {
+  color: #b3263e;
+  font-weight: 600;
+}
+
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.pub-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 16px;
+
+  border: 1px solid var(--line);
+  border-radius: 3px;
+
+  background: var(--paper);
+  color: #626873;
+
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.pub-link:hover {
+  color: var(--accent-strong);
+  border-color: var(--accent);
+  background-color: var(--accent-soft);
 }
 
 .entry-card p {
