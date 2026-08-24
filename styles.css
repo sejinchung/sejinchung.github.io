@@ -356,6 +356,38 @@ sup {
   font-size: 12px;
 }
 
+#education .entry-list {
+  gap: 0;
+}
+
+#education .entry-card {
+  padding: 14px 0;
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+#education .entry-card:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+#education .entry-card h3 {
+  margin: 0 0 4px;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+#education .entry-card p {
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+#education .entry-card .date {
+  font-size: 12px;
+}
+
 .sample-entry {
   border-style: dashed;
 }
