@@ -365,16 +365,25 @@ sup {
 }
 
 #education .entry-card {
+  position: relative;
   padding: 14px 0;
   background: transparent;
   border: 0;
-  border-top: 1px solid var(--line);
   border-radius: 0;
   box-shadow: none;
 }
 
-#education .entry-card:last-child {
-  border-bottom: 1px solid var(--line);
+#education .entry-card + .entry-card::before {
+  position: absolute;
+  top: 0;
+  right: 16px;
+  left: 16px;
+  content: "";
+  border-top: 1px dashed #ebe4e8;
+}
+
+#education {
+  border-bottom: 2px solid #ddd4d9;
 }
 
 #education .entry-card h3 {
