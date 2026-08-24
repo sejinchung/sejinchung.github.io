@@ -290,7 +290,7 @@ h3 {
   align-items: center;
   justify-content: center;
 
-  padding: 8px 16px;
+  padding: 6px 13px;
 
   border: 1px solid var(--line);
   border-radius: 3px;
@@ -298,7 +298,7 @@ h3 {
   background: var(--paper);
   color: #626873;
 
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 500;
   text-decoration: none;
 
