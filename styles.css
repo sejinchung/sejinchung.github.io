@@ -292,7 +292,7 @@ h3 {
 
 .publication-heading h3 {
   margin: 0;
-  font-size: 13px;
+  font-size: 13.5px;
   line-height: 1.45;
 }
 
@@ -414,47 +414,74 @@ sup {
 }
 
 #awards .entry-card {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 12px 0;
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 148px;
+  align-items: start;
+  gap: 18px;
+  padding: 13px 8px;
   background: transparent;
   border: 0;
   border-radius: 0;
   box-shadow: none;
+  transition: background-color 160ms ease;
 }
 
-#awards .entry-card + .entry-card {
+#awards .entry-card:hover {
+  background: #fdfafb;
+}
+
+#awards .entry-card + .entry-card::before {
+  position: absolute;
+  top: 0;
+  right: 8px;
+  left: 8px;
+  content: "";
   border-top: 1px solid var(--line);
 }
 
 #awards .entry-card > div {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(190px, 0.9fr) minmax(220px, 1.2fr);
   min-width: 0;
-  align-items: baseline;
-  gap: 7px;
+  align-items: start;
+  gap: 18px;
 }
 
 #awards .entry-card h3,
 #awards .entry-card p {
   margin: 0;
-  font-size: 12px;
-  line-height: 1.45;
+  line-height: 1.5;
 }
 
 #awards .entry-card h3 {
   color: var(--ink);
+  font-size: 13px;
   font-weight: 600;
 }
 
+#awards .entry-card > div > p {
+  position: relative;
+  padding-left: 13px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
 #awards .entry-card > div > p::before {
-  margin-right: 7px;
-  color: var(--line);
-  content: "·";
+  position: absolute;
+  top: 0.65em;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  content: "";
+  background: #d8b7c2;
+  border-radius: 50%;
 }
 
 #awards .entry-card .date {
-  margin-left: auto;
+  color: var(--muted);
+  font-size: 12px;
+  text-align: right;
   white-space: nowrap;
 }
 
@@ -537,6 +564,28 @@ footer p {
   .entry-card {
     grid-template-columns: 1fr;
     gap: 8px;
+  }
+
+  #awards .entry-card {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  #awards .entry-card > div {
+    grid-template-columns: 1fr;
+    gap: 3px;
+  }
+
+  #awards .entry-card > div > p {
+    padding-left: 0;
+  }
+
+  #awards .entry-card > div > p::before {
+    display: none;
+  }
+
+  #awards .entry-card .date {
+    text-align: left;
   }
 
   footer {
