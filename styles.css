@@ -360,11 +360,15 @@ sup {
   font-size: 13px;
 }
 
-#education .entry-list {
+#education .entry-list,
+#experience .entry-list,
+#activities .entry-list {
   gap: 0;
 }
 
-#education .entry-card {
+#education .entry-card,
+#experience .entry-card,
+#activities .entry-card {
   position: relative;
   padding: 14px 0;
   background: transparent;
@@ -373,7 +377,9 @@ sup {
   box-shadow: none;
 }
 
-#education .entry-card + .entry-card::before {
+#education .entry-card + .entry-card::before,
+#experience .entry-card + .entry-card::before,
+#activities .entry-card + .entry-card::before {
   position: absolute;
   top: 0;
   right: 16px;
@@ -382,19 +388,71 @@ sup {
   border-top: 1px dashed #ebe4e8;
 }
 
-#education .entry-card h3 {
+#education .entry-card h3,
+#experience .entry-card h3,
+#activities .entry-card h3 {
   margin: 0 0 4px;
   font-size: 14px;
   line-height: 1.45;
 }
 
-#education .entry-card p {
+#education .entry-card p,
+#experience .entry-card p,
+#activities .entry-card p {
   font-size: 12px;
   line-height: 1.55;
 }
 
-#education .entry-card .date {
+#education .entry-card .date,
+#experience .entry-card .date,
+#activities .entry-card .date {
   font-size: 12px;
+}
+
+#awards .entry-list {
+  gap: 0;
+}
+
+#awards .entry-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+#awards .entry-card > div {
+  display: flex;
+  min-width: 0;
+  align-items: baseline;
+  gap: 7px;
+}
+
+#awards .entry-card h3,
+#awards .entry-card p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+#awards .entry-card h3 {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+#awards .entry-card > div > p::before {
+  margin-right: 7px;
+  color: var(--line);
+  content: "·";
+}
+
+#awards .entry-card .date {
+  margin-left: auto;
+  white-space: nowrap;
 }
 
 .sample-entry {
