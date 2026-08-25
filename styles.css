@@ -235,7 +235,11 @@ h3 {
 }
 
 #about > p {
-  font-size: 13px;
+  font-size: 14px;
+}
+
+#about a {
+  color: var(--accent);
 }
 
 .sections section > p.empty-state {
