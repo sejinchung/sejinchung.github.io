@@ -239,7 +239,7 @@ h3 {
 }
 
 #about a {
-  color: var(--accent);
+  color: var(--accent-strong);
 }
 
 .sections section > p.empty-state {
