@@ -479,27 +479,6 @@ sup {
   white-space: nowrap;
 }
 
-#awards .entry-card:nth-child(3) {
-  gap: 7px;
-}
-
-#awards .entry-card:nth-child(3) > div {
-  flex: 1 1 auto;
-  gap: 4px;
-  white-space: nowrap;
-}
-
-#awards .entry-card:nth-child(3) h3 {
-  font-size: 11px;
-  letter-spacing: -0.015em;
-}
-
-#awards .entry-card:nth-child(3) p,
-#awards .entry-card:nth-child(3) .date {
-  font-size: 10.5px;
-  letter-spacing: -0.01em;
-}
-
 .sample-entry {
   border-style: dashed;
 }
@@ -604,10 +583,6 @@ footer p {
   #awards .entry-card .date {
     margin-left: 0;
     text-align: left;
-  }
-
-  #awards .entry-card:nth-child(3) > div {
-    white-space: normal;
   }
 
   footer {
