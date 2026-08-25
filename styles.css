@@ -234,6 +234,10 @@ h3 {
   line-height: 1.75;
 }
 
+#about > p {
+  font-size: 13px;
+}
+
 .sections section > p.empty-state {
   color: var(--muted);
   font-size: 14px;
@@ -292,13 +296,13 @@ h3 {
 
 .publication-heading h3 {
   margin: 0;
-  font-size: 13.5px;
+  font-size: 13px;
   line-height: 1.45;
 }
 
 .publication-card > div > p {
   margin-left: 35px;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.55;
 }
 
@@ -360,6 +364,10 @@ sup {
   font-size: 13px;
 }
 
+.publication-card .entry-meta {
+  font-size: 12px;
+}
+
 #education .entry-list,
 #experience .entry-list,
 #activities .entry-list {
@@ -415,74 +423,81 @@ sup {
 
 #awards .entry-card {
   position: relative;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 148px;
-  align-items: start;
-  gap: 18px;
-  padding: 13px 8px;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 12px 0;
   background: transparent;
   border: 0;
   border-radius: 0;
   box-shadow: none;
-  transition: background-color 160ms ease;
-}
-
-#awards .entry-card:hover {
-  background: #fdfafb;
 }
 
 #awards .entry-card + .entry-card::before {
   position: absolute;
   top: 0;
-  right: 8px;
-  left: 8px;
+  right: 16px;
+  left: 16px;
   content: "";
-  border-top: 1px solid var(--line);
+  border-top: 1px dashed #ebe4e8;
 }
 
 #awards .entry-card > div {
-  display: grid;
-  grid-template-columns: minmax(190px, 0.9fr) minmax(220px, 1.2fr);
+  display: flex;
   min-width: 0;
-  align-items: start;
-  gap: 18px;
+  align-items: baseline;
+  gap: 7px;
 }
 
 #awards .entry-card h3,
 #awards .entry-card p {
   margin: 0;
-  line-height: 1.5;
+  font-size: 12px;
+  line-height: 1.45;
 }
 
 #awards .entry-card h3 {
   color: var(--ink);
-  font-size: 13px;
   font-weight: 600;
 }
 
 #awards .entry-card > div > p {
-  position: relative;
-  padding-left: 13px;
   color: var(--muted);
-  font-size: 12px;
 }
 
 #awards .entry-card > div > p::before {
-  position: absolute;
-  top: 0.65em;
-  left: 0;
-  width: 4px;
-  height: 4px;
-  content: "";
-  background: #d8b7c2;
-  border-radius: 50%;
+  margin-right: 7px;
+  color: #d8cfd4;
+  content: "·";
 }
 
 #awards .entry-card .date {
+  margin-left: auto;
   color: var(--muted);
   font-size: 12px;
   text-align: right;
   white-space: nowrap;
+}
+
+#awards .entry-card:nth-child(3) {
+  gap: 7px;
+}
+
+#awards .entry-card:nth-child(3) > div {
+  flex: 1 1 auto;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+#awards .entry-card:nth-child(3) h3 {
+  font-size: 11px;
+  letter-spacing: -0.015em;
+}
+
+#awards .entry-card:nth-child(3) p,
+#awards .entry-card:nth-child(3) .date {
+  font-size: 10.5px;
+  letter-spacing: -0.01em;
 }
 
 .sample-entry {
@@ -567,12 +582,14 @@ footer p {
   }
 
   #awards .entry-card {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 5px;
   }
 
   #awards .entry-card > div {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 3px;
   }
 
@@ -585,7 +602,12 @@ footer p {
   }
 
   #awards .entry-card .date {
+    margin-left: 0;
     text-align: left;
+  }
+
+  #awards .entry-card:nth-child(3) > div {
+    white-space: normal;
   }
 
   footer {
